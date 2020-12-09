@@ -1,0 +1,17 @@
+[package]
+name = "platform"
+version = "0.1.0"
+authors = ["nanolsn <nanonicholson@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-web = "3.1"
+diesel = { version = "1.4", features = ["postgres", "r2d2", "chrono"] }
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.5"
+serde_json = "1.0"
+scrypt = "0.4"
+subtle = "2.3"
+jwt = { package = "jsonwebtoken", version = "7.2.0" }
+rand = "0.7"
+chrono = { version = "0.4", features = ["serde"] }
